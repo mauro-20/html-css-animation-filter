@@ -153,3 +153,32 @@
 }
 
 
+.ex-12-button:hover .ex-12-top-white{
+    animation: white-move-top 2s ;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: white-move-bottom 2s ;
+}
+
+@keyframes white-move-top {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(90% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+@keyframes white-move-bottom {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(80% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
+}
